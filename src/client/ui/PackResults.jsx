@@ -105,7 +105,9 @@ class PackResults extends React.Component {
         let views = [], ix=0;
         if(this.state.packResult) {
             for (let item of this.state.packResult) {
-                views.push((
+                let width = item.buffer.width;
+                let height = item.buffer.height;
+                views.push((<div class="texture-size">{width}x{height}</div>), (
                     <TextureView key={"tex-view-" + ix} data={item} scale={this.state.scale} textureBack={this.state.textureBack} selectedImages={this.state.selectedImages} displayOutline={this.state.displayOutline} />
                 ));
                 ix++;

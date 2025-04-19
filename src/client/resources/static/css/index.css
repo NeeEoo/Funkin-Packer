@@ -1031,3 +1031,7 @@ html, body {
     margin: auto;
     margin-right: 300px;
 }
+
+.texture-size {
+    font-size: 24px;
+}
