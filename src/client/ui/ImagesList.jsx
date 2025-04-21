@@ -10,7 +10,7 @@ import ImagesTree from './ImagesTree.jsx';
 
 import FileSystem from 'platform/FileSystem';
 
-import {clearGlobals, smartSortImages} from '../utils/common';
+import {clearGlobals, smartSortImages, strNumPairCompare} from '../utils/common';
 
 let INSTANCE = null;
 
@@ -203,7 +203,7 @@ class ImagesList extends React.Component {
 
     sortImages(images) {
         let names = Object.keys(images);
-        names.sort(smartSortImages);
+        names.sort(strNumPairCompare);
 
         let sorted = {};
 
