@@ -88,6 +88,7 @@ TINIFY_ERROR;Tinify Error: %s
 TINIFY_ERROR_COMMON;Tinify Error...
 OLD_BROWSER_MESSAGE1;Ihr Browser ist für diese App leider zu alt...
 OLD_BROWSER_MESSAGE2;Bitte benutzen Sie einen der folgenden Browser:
+EXPORTER_SUCCESS;Erfolgreicher Export
 EXPORTER_ERROR;Export Error: %s
 CUSTOM_EXPORTER_ERROR;Template Error: %s
 ABOUT_HOMEPAGE;Startseite:

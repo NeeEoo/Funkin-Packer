@@ -84,9 +84,47 @@ function clearGlobals() {
     window.sparrowMaxMap = undefined;
 }
 
+function pickStrNumPair(str) {
+    const regex = /\d+/g;
+    let pairs = [];
+    let start = 0;
+    let match;
+    while ((match = regex.exec(str)) !== null) {
+        const pos = match.index;
+        const prefix = pos === start ? "" : str.slice(start, pos);
+        start = pos + match[0].length;
+        const num = Number(match[0]);
+        pairs.push({s: prefix, n: num});
+    }
+    if (start < str.length) {
+        pairs.push({s: str.slice(start), n: 0});
+    }
+    return pairs;
+}
+
+function strNumPairCompare(a, b) {
+    const aPairs = pickStrNumPair(a);
+    const bPairs = pickStrNumPair(b);
+    const cmpSize = aPairs.length < bPairs.length ? aPairs.length : bPairs.length;
+    for (let i = 0; i < cmpSize; ++i) {
+        const aPair = aPairs[i];
+        const bPair = bPairs[i];
+        const cmp = aPair.s.localeCompare(bPair.s);
+        if (cmp !== 0)
+            return cmp;
+        if (aPair.n !== bPair.n)
+            return aPair.n - bPair.n;
+    }
+    if (aPairs.length !== bPairs.length)
+        return aPairs.length - bPairs.length;
+    return 0;
+}
+
 module.exports = {
     smartSortImages: smartSortImages,
     cleanPrefix: cleanPrefix,
     clearGlobals: clearGlobals,
-    removeFromArray: removeFromArray
+    removeFromArray: removeFromArray,
+    pickStrNumPair: pickStrNumPair,
+    strNumPairCompare: strNumPairCompare
 };

@@ -1,6 +1,7 @@
 import list from './list.json';
 import appInfo from '../../../package.json';
 import {GET} from '../utils/ajax';
+import {strNumPairCompare} from '../utils/common';
 import mustache from 'mustache';
 import wax from '@jvitela/mustache-wax';
 import { smartSortImages, removeFromArray } from '../utils/common';
@@ -123,8 +124,9 @@ function prepareData(data, options) {
             rotated: item.rotated,
             trimmed: trimmed
         });
-
     }
+    
+    ret.sort((a, b) => strNumPairCompare(a.name, b.name));
 
     return {rects: ret, config: opt};
 }
