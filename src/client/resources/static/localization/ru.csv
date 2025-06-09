@@ -18,7 +18,6 @@ DELETE;Удалить
 DELETE_TITLE;Удалить выбранные изображения
 REPLACE_FILES_PROMPT;Перезаписать существующие файлы?
 DISPLAY_OUTLINES;Контуры:
-SCALE;Масштаб:
 SHOW_SPRITES;Анимации
 SPRITE_NAME;Название спрайта:
 ANIMATION_SPEED;Скорость анимации:
@@ -38,6 +37,7 @@ TINIFY_KEY_TITLE;Ключ TinyPNG https://tinypng.com/developers
 TINIFY_KEY;Ключ TinyPNG
 DISABLE_SMOOTHING;Отключить сглаживание
 DISABLE_SMOOTHING_TITLE;Отключить сглаживание изображения
+SCALE_NUM;Масштаб
 SCALE;Масштаб:
 SCALE_TITLE;Текущий масштаб текстуры. Влияет на пересчет размеров и координат при экспорте
 FILTER;Фильтр:

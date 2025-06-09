@@ -18,7 +18,6 @@ DELETE;Borrar
 DELETE_TITLE;borrar imágenes seleccionadas
 REPLACE_FILES_PROMPT;Reemplazar archivos existentes?
 DISPLAY_OUTLINES;Outlines:
-SCALE;Escala:
 SHOW_SPRITES;Animaciones
 SPRITE_NAME;Nombre de sprite:
 ANIMATION_SPEED;Velocidad Animación:
@@ -38,6 +37,7 @@ TINIFY_KEY_TITLE;TinyPNG key https://tinypng.com/developers
 TINIFY_KEY;TinyPNG key
 DISABLE_SMOOTHING;Deshabilitar suavizado
 DISABLE_SMOOTHING_TITLE;Deshabilitar suavizado de imagen
+SCALE_NUM;Escala
 SCALE;Escala:
 SCALE_TITLE;Escala de la textura base
 FILTER;Filtro:
