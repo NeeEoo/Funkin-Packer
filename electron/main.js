@@ -3,6 +3,7 @@ const path = require('path');
 const argv = require('optimist').argv;
 const windowStateKeeper = require('electron-window-state');
 const {app, BrowserWindow, ipcMain, Menu, shell} = require('electron');
+const localShortcut = require('electron-localshortcut');
 const {autoUpdater} = require("electron-updater");
 
 let mainWindow;
@@ -40,6 +41,7 @@ function createWindow() {
     });
 
     mainWindowState.manage(mainWindow);
+    buildShortcuts();
 
     mainWindow.on('page-title-updated', function(e) {
         e.preventDefault();
@@ -273,6 +275,17 @@ function buildMenu() {
 
     let menu = Menu.buildFromTemplate(template);
     Menu.setApplicationMenu(menu);
+}
+
+function buildShortcuts() {
+    const shortcuts = {
+        'F12': () => mainWindow.webContents.toggleDevTools(),
+        'Ctrl+F11': () => mainWindow.webContents.reload()
+    };
+
+    Object.keys(shortcuts).forEach(key => {
+        localShortcut.register(mainWindow, key, shortcuts[key]);
+    });
 }
 
 function installCLI() {
