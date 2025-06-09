@@ -105,7 +105,9 @@ class PackResults extends React.Component {
         let views = [], ix=0;
         if(this.state.packResult) {
             for (let item of this.state.packResult) {
-                views.push((
+                let width = item.buffer.width;
+                let height = item.buffer.height;
+                views.push((<div class="texture-size">{width}x{height}</div>), (
                     <TextureView key={"tex-view-" + ix} data={item} scale={this.state.scale} textureBack={this.state.textureBack} selectedImages={this.state.selectedImages} displayOutline={this.state.displayOutline} />
                 ));
                 ix++;
@@ -147,7 +149,7 @@ class PackResults extends React.Component {
                                         <input type="checkbox" id="result-view-outline" onChange={this.changeOutlines} />
                                     </td>
                                     <td>
-                                        {I18.f("SCALE")}
+                                        {I18.f("SCALE_NUM")}({this.state.scale.toFixed(1)}):
                                     </td>
                                     <td>
                                         <input ref={this.rangeRef} type="range" min="0.1" max="2" step={this.step} defaultValue="1" onChange={this.changeScale}/>

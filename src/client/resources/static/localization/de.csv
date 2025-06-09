@@ -20,7 +20,6 @@ REPLACE_FILES_PROMPT;Bestehende Dateien ersetzen?
 DISPLAY_OUTLINES;Umriss:
 DISABLE_SMOOTHING;Glättung deaktivieren
 DISABLE_SMOOTHING_TITLE;Deaktivieren Sie die Bildglättung
-SCALE;Skalierung:
 SHOW_SPRITES;Animationen
 SPRITE_NAME;Sprite-Name:
 ANIMATION_SPEED;Animationsgeschwindigkeit:
@@ -38,6 +37,8 @@ TINIFY;Tinify
 TINIFY_TITLE;Tinify mithilfe von https://tinypng.com
 TINIFY_KEY;TinyPNG Schlüssel
 TINIFY_KEY_TITLE;TinyPNG Schlüssel https://tinypng.com/developers
+SCALE_NUM;Skalierung
+SCALE;Skalierung:
 SCALE_TITLE;Basistextur Skalierung
 FILTER;Filter:
 FILTER_TITLE;Filter für die Ausgabedatei
@@ -87,6 +88,7 @@ TINIFY_ERROR;Tinify Error: %s
 TINIFY_ERROR_COMMON;Tinify Error...
 OLD_BROWSER_MESSAGE1;Ihr Browser ist für diese App leider zu alt...
 OLD_BROWSER_MESSAGE2;Bitte benutzen Sie einen der folgenden Browser:
+EXPORTER_SUCCESS;Erfolgreicher Export
 EXPORTER_ERROR;Export Error: %s
 CUSTOM_EXPORTER_ERROR;Template Error: %s
 ABOUT_HOMEPAGE;Startseite:

@@ -227,6 +227,7 @@ class APP {
 
         Downloader.run(files, this.packOptions.fileName, this.packOptions.savePath);
         Observer.emit(GLOBAL_EVENT.HIDE_SHADER);
+        Observer.emit(GLOBAL_EVENT.SHOW_MESSAGE, I18.f("EXPORTER_SUCCESS"));
     }
 }
 
