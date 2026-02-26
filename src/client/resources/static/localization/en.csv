@@ -138,6 +138,7 @@ SELECT_DATA_FILE;Data file
 SPLITTER;Repack / Split sheet
 SPLITTER_ERROR_NO_FRAMES;Sprites not found. Probably, atlas format is incorrect.
 DISABLE_UNTRIM;Disable Untrimming:
+ADVANCED;Advanced
 REPACK;Repack
 CLEAR_STORED_ORDER_TITLE;Clears the order from the repack
 CLEAR_STORED_ORDER;Clear Stored Order

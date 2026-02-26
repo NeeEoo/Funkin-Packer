@@ -4,13 +4,13 @@ NO;НЕТ
 CANCEL;ОТМЕНА
 SAVE;СОХРАНИТЬ
 IMAGES;Изображения
-LANGUAGE;язык:
+LANGUAGE;Язык интерфейса:
 ADD_IMAGES;Добавить
-ADD_IMAGES_TITLE;Добавить изображения
+ADD_IMAGES_TITLE;Распаковка изображения
 ADD_FOLDER;Добавить папку
-ADD_FOLDER_TITLE;Добавить папку
+ADD_FOLDER_TITLE;Распаковка папки
 ADD_ZIP;Добавить ZIP
-ADD_ZIP_TITLE;Добавить упакованные изображения
+ADD_ZIP_TITLE;Распаковка упакованных изображений в ZIP
 IMAGE_DROP_HELP;или перетяните изображения сюда
 CLEAR;Очистить
 CLEAR_TITLE;Очистить все изображения
@@ -18,7 +18,7 @@ DELETE;Удалить
 DELETE_TITLE;Удалить выбранные изображения
 REPLACE_FILES_PROMPT;Перезаписать существующие файлы?
 DISPLAY_OUTLINES;Контуры:
-SCALE;Масштаб:
+SCALE;Размер:
 SHOW_SPRITES;Анимации
 SPRITE_NAME;Название спрайта:
 ANIMATION_SPEED;Скорость анимации:
@@ -111,10 +111,10 @@ MENU_FILE_EXIT;Выход
 MENU_ACTIONS;Действия
 MENU_ACTIONS_ADD_IMAGES;Добавить изображения
 MENU_ACTIONS_ADD_FOLDER;Добавить папку
-MENU_ACTIONS_SELECT_ALL;Выделить все
+MENU_ACTIONS_SELECT_ALL;Выделить всё
 MENU_ACTIONS_DELETE;Удалить
 MENU_ACTIONS_CLEAR;Очистить
-MENU_ACTIONS_EXPORT;Экспорт
+MENU_ACTIONS_EXPORT;Экспортировать
 MENU_TOOLS;Инструменты
 MENU_TOOLS_SPLITTER;Распаковка атласа
 MENU_LANGUAGE;Язык
@@ -132,14 +132,15 @@ CONTEXT_MENU_COPY;Копировать
 CONTEXT_MENU_PASTE;Вставить
 CONTEXT_MENU_DELETE;Удалить
 CONTEXT_MENU_SELECT_ALL;Выделить все
-SPLIT;Распаковать
+SPLIT;Распаковка
 SELECT_TEXTURE;Текстура
-SELECT_DATA_FILE;Данные
-SPLITTER;Распаковка атласа
+SELECT_DATA_FILE;Файл Данных
+SPLITTER;Разделка атласа
 SPLITTER_ERROR_NO_FRAMES;Не найдено ни одного спрайта. Возможно, формат атласа неверен.
-DISABLE_UNTRIM;Обрезать:
-REPACK;Repack
-CLEAR_STORED_ORDER_TITLE;Clears the order from the repack
-CLEAR_STORED_ORDER;Clear Stored Order
-SORT_EXPORT_TITLE;Sort Exported Rows
-SORT_EXPORT;Sort Exported Rows:
+DISABLE_UNTRIM;Включать обрезку?
+REPACK;Репак
+ADVANCED;Расширенные настройки
+CLEAR_STORED_ORDER_TITLE;Отчищает порядок из репака
+CLEAR_STORED_ORDER;Отчистить Сохранённый Порядок
+SORT_EXPORT_TITLE;Сортирует Экспортированных Рядов
+SORT_EXPORT;Сортировать Экспортированные Ряды:

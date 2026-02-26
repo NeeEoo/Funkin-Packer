@@ -417,7 +417,7 @@ class PackProperties extends React.Component {
                             </tr>
                             <tr>
                                 <td colSpan="3" className="center-align">
-                                    Advanced
+                                    {I18.f("ADVANCED")}
                                 </td>
                             </tr>
 
@@ -488,3 +488,4 @@ class PackerMethods extends React.Component {
 }
 
 export default PackProperties;
+

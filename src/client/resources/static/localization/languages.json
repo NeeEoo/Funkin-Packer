@@ -1,7 +1,7 @@
 [
-    { "lang": "en", "name": "english" },
-    { "lang": "de", "name": "deutsch"},
-    { "lang": "es", "name": "español" },
-    { "lang": "ru", "name": "русский"},
+    { "lang": "en", "name": "English" },
+    { "lang": "de", "name": "Deutsch"},
+    { "lang": "es", "name": "Español" },
+    { "lang": "ru", "name": "Русский язык"},
     { "lang": "zh-cn", "name": "简体中文"}
 ]

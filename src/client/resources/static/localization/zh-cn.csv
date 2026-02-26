@@ -138,6 +138,7 @@ SELECT_DATA_FILE;数据文件
 SPLITTER;分割精灵表
 SPLITTER_ERROR_NO_FRAMES;精灵图没有找到，请检查文件格式是否正确。
 DISABLE_UNTRIM;保持整齐(修剪):
+ADVANCED;Advanced
 REPACK;Repack
 CLEAR_STORED_ORDER_TITLE;Clears the order from the repack
 CLEAR_STORED_ORDER;Clear Stored Order

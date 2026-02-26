@@ -137,6 +137,7 @@ SELECT_DATA_FILE;Daten-Datei
 SPLITTER;Sprites aus Bild extrahieren
 SPLITTER_ERROR_NO_FRAMES;Sprites wurden nicht gefunden. Vermutlich ist das Atlas Format falsch.
 DISABLE_UNTRIM;Trim beibehalten:
+ADVANCED;Advanced
 REPACK;Repack
 CLEAR_STORED_ORDER_TITLE;Clears the order from the repack
 CLEAR_STORED_ORDER;Clear Stored Order

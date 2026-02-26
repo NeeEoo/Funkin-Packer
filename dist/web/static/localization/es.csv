@@ -139,3 +139,8 @@ SPLITTER;Desembalaje atlas
 SPLITTER_ERROR_NO_FRAMES;No se ha encontrado ningún sprite. Quizás el formato del atlas sea incorrecto.
 DISABLE_UNTRIM;Mantener corte:
 REPACK;Repack
+ADVANCED;Advanced
+REPACK;Repack
+CLEAR_STORED_ORDER_TITLE;Clears the order from the repack
+CLEAR_STORED_ORDER;Clear Stored Order
+SORT_EXPORT_TITLE;Sort Exported Rows
